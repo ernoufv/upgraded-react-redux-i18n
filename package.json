@@ -1,5 +1,5 @@
 {
-  "name": "upgraded-react-redux-i18n",
+  "name": "@vernouf/upgraded-react-redux-i18n",
   "version": "2.0.0",
   "author": "Artis Avotins - Upgrade from Valentin Ernouf",
   "main": "./build/index.js",
@@ -70,5 +70,11 @@
     "rules": {
       "arrow-parens": "off"
     }
-  }
+  },
+  "description": "A binding library for redux to react-i18nify",
+  "bugs": {
+    "url": "https://github.com/ernoufv/upgraded-react-redux-i18n/issues"
+  },
+  "homepage": "https://github.com/ernoufv/upgraded-react-redux-i18n#readme",
+  "license": "ISC"
 }
