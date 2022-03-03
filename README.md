@@ -8,12 +8,12 @@ First install the package.
 
 Using `npm`:
 ```
-npm i react-redux-i18n --save
+npm i upgraded-react-redux-i18n --save
 ```
 
 Using `yarn`:
 ```
-yarn add react-redux-i18n
+yarn add upgraded-react-redux-i18n
 ```
 
 `redux-thunk` is an implicit dependency, so you need it installed and included in your project.
