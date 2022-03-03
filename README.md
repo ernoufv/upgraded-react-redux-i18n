@@ -141,7 +141,7 @@ I18n.l(Math.PI, { maximumFractionDigits: 2 }); // => returns '3,14' for locale '
 
 ## Supported localize options
 
-The localize component and helper support all date formatting options as provided by the Javascript `moment` library. For the full list of options, see http://momentjs.com/docs/#/displaying/format/.
+The localize component and helper support all date formatting options as provided by the Javascript `date-fns` library.
 
 For number formatting, the localize component and helper support all options as provided by the Javascript built-in `Intl.NumberFormat` object. For the full list of options, see https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/NumberFormat.
 
