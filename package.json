@@ -1,7 +1,7 @@
 {
   "name": "@vernouf/upgraded-react-redux-i18n",
-  "version": "2.0.1",
-  "author": "Artis Avotins - Upgrade from Valentin Ernouf",
+  "version": "2.0.2",
+  "author": "Valentin Ernouf - Forked from Artis Avotins",
   "main": "./build/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
