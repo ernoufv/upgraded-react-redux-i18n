@@ -1,6 +1,6 @@
 {
   "name": "@vernouf/upgraded-react-redux-i18n",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "author": "Valentin Ernouf - Forked from Artis Avotins",
   "main": "./build/index.js",
   "scripts": {

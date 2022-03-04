@@ -1,6 +1,7 @@
-# react-redux-i18n
+# @vernouf/upgraded-react-redux-i18n
 
 A binding library for redux to react-i18nify
+- Forked and upgraded from `react-redux-i18n` (https://www.npmjs.com/package/react-redux-i18n)
 
 ## Usage
 
@@ -8,12 +9,12 @@ First install the package.
 
 Using `npm`:
 ```
-npm i upgraded-react-redux-i18n --save
+npm i @vernouf/upgraded-react-redux-i18n --save
 ```
 
 Using `yarn`:
 ```
-yarn add upgraded-react-redux-i18n
+yarn add @vernouf/upgraded-react-redux-i18n
 ```
 
 `redux-thunk` is an implicit dependency, so you need it installed and included in your project.
@@ -127,16 +128,17 @@ argument to `setLocale` and/or `setTranslations`.
 If for some reason, you cannot use the components, you can use the `I18n.t` and `I18n.l` helpers instead:
 
 ```javascript
-var I18n = require('react-redux-i18n').I18n;
+import translate from 'upgraded-react-redux-i18n';
+import localize from 'upgraded-react-redux-i18n';
 
-I18n.t('application.title'); // => returns 'Toffe app met i18n!' for locale 'nl'
-I18n.t('application.hello', {name: 'Aad'}); // => returns 'Hallo, Aad!' for locale 'nl'
-I18n.t('export', {count: 0}); // => returns 'Niks te exporteren' for locale 'nl'
-I18n.t('application.weird_key'); // => returns 'Weird key' as translation is missing
-I18n.t('application', {name: 'Aad'}); // => returns {hello: "Hallo, Aad!", title: "Toffe app met i18n!"} for locale 'nl'
+translate('application.title'); // => returns 'Toffe app met i18n!' for locale 'nl'
+translate('application.hello', {name: 'Aad'}); // => returns 'Hallo, Aad!' for locale 'nl'
+translate('export', {count: 0}); // => returns 'Niks te exporteren' for locale 'nl'
+translate('application.weird_key'); // => returns 'Weird key' as translation is missing
+translate('application', {name: 'Aad'}); // => returns {hello: "Hallo, Aad!", title: "Toffe app met i18n!"} for locale 'nl'
 
-I18n.l(1385856000000, { dateFormat: 'date.long' }); // => returns '1 december 2013' for locale 'nl'
-I18n.l(Math.PI, { maximumFractionDigits: 2 }); // => returns '3,14' for locale 'nl'
+localize(1385856000000, { dateFormat: 'date.long' }); // => returns '1 december 2013' for locale 'nl'
+localize(Math.PI, { maximumFractionDigits: 2 }); // => returns '3,14' for locale 'nl'
 ```
 
 ## Supported localize options
